@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5uX5hfJvJ-8EUMOmjF0kedK3rPpFWLxxtQ&s" alt="Company Logo">
+        </div>
+        <h1>Payroll Management System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Payroll</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <h2>Employee Payroll Details</h2>
+        
+        <!-- Payroll Details Form -->
+        <form class="payroll-form" action="#">
+            <label for="emp-id">Employee ID:</label>
+            <input type="text" id="emp-id" name="emp-id" placeholder="e.g., EMP001" required>
+            
+            <label for="emp-name">Employee Name:</label>
+            <input type="text" id="emp-name" name="emp-name" placeholder="e.g., Bhawna kumari" required>
+            
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" placeholder="e.g., 5000" required>
+            
+            <label for="payment-date">Payment Date:</label>
+            <input type="date" id="payment-date" name="payment-date" required>
+            
+            <label for="status">Payment Status:</label>
+            <select id="status" name="status" required>
+                <option value="paid">Paid</option>
+                <option value="pending">Pending</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Employee Payroll Table -->
+        <h2>Employee List</h2>
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Salary</th>
+                    <th>Payment Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>EMP001</td>
+                    <td>Bhavna Kumari</td>
+                    <td>$5000</td>
+                    <td>2024-10-01</td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>EMP002</td>
+                    <td>Kapil Sharma</td>
+                    <td>$4000</td>
+                    <td>2024-10-05</td>
+                    <td>Pending</td>
+                </tr>
+                <!-- Additional static rows can be added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Payroll Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
